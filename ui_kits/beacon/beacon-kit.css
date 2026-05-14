@@ -1,0 +1,19 @@
+/* ui_kits/beacon/beacon-kit.css — shared styles for the UI kit */
+@import url('../../colors_and_type.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Times New Roman", Georgia, serif;
+  background: #FFFFFF;
+  color: #0A0A0A;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Transitions */
+a, button { transition: all 150ms cubic-bezier(0.25,0,0,1); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F5F5F5; }
+::-webkit-scrollbar-thumb { background: #CDCDCD; }

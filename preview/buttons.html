@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--bg-primary); font-family: var(--font-serif); }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+  .section-title { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-subtle); margin-bottom: 10px; }
+
+  /* Primary button */
+  .btn {
+    font-family: var(--font-serif);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms cubic-bezier(0.25,0,0,1);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .btn-primary { background: var(--color-black); color: var(--color-white); border-radius: 2px; }
+  .btn-primary:hover { background: var(--color-orange); }
+  .btn-secondary { background: transparent; color: var(--color-black); border: 1px solid var(--color-black); border-radius: 2px; }
+  .btn-secondary:hover { border-color: var(--color-orange); color: var(--color-orange); }
+  .btn-accent { background: var(--color-orange); color: var(--color-white); border-radius: 2px; }
+  .btn-accent:hover { background: var(--color-orange-dark); }
+  .btn-ghost { background: transparent; color: var(--fg-secondary); border: none; padding: 10px 12px; }
+  .btn-ghost:hover { color: var(--color-black); }
+  .btn-sm { font-size: 11px; padding: 7px 16px; }
+  .btn-disabled { background: var(--color-gray-200); color: var(--color-gray-400); cursor: not-allowed; border-radius: 2px; border: none; }
+</style>
+</head><body>
+  <div class="section-title">Primary · Secondary · Accent · Ghost</div>
+  <div class="row">
+    <button class="btn btn-primary">Apply Now</button>
+    <button class="btn btn-secondary">Learn More</button>
+    <button class="btn btn-accent">Join BEACON</button>
+    <button class="btn btn-ghost">See Events →</button>
+  </div>
+  <div class="section-title">Sizes · Disabled</div>
+  <div class="row">
+    <button class="btn btn-primary btn-sm">Apply</button>
+    <button class="btn btn-primary">Apply Now</button>
+    <button class="btn btn-disabled">Closed</button>
+  </div>
+</body></html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--bg-primary); font-family: var(--font-serif); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .token { }
+  .token-block { height: 44px; border: 1px solid var(--border-default); }
+  .token-name { font-size: 10px; font-family: var(--font-mono); color: var(--fg-muted); margin-top: 5px; }
+  .token-desc { font-size: 10px; color: var(--fg-subtle); }
+  .section-title { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-subtle); margin-bottom: 12px; }
+</style>
+</head><body>
+<div class="section-title">Semantic Tokens</div>
+<div class="grid">
+  <div class="token"><div class="token-block" style="background:var(--fg-primary);"></div><div class="token-name">--fg-primary</div><div class="token-desc">Primary text</div></div>
+  <div class="token"><div class="token-block" style="background:var(--fg-secondary);"></div><div class="token-name">--fg-secondary</div><div class="token-desc">Secondary text</div></div>
+  <div class="token"><div class="token-block" style="background:var(--fg-muted);"></div><div class="token-name">--fg-muted</div><div class="token-desc">Muted text</div></div>
+  <div class="token"><div class="token-block" style="background:var(--fg-accent);"></div><div class="token-name">--fg-accent</div><div class="token-desc">Accent text</div></div>
+  <div class="token"><div class="token-block" style="background:var(--bg-primary); border-color:#E4E4E4;"></div><div class="token-name">--bg-primary</div><div class="token-desc">Primary bg</div></div>
+  <div class="token"><div class="token-block" style="background:var(--bg-secondary);"></div><div class="token-name">--bg-secondary</div><div class="token-desc">Cream bg</div></div>
+  <div class="token"><div class="token-block" style="background:var(--bg-tertiary);"></div><div class="token-name">--bg-tertiary</div><div class="token-desc">Gray bg</div></div>
+  <div class="token"><div class="token-block" style="background:var(--bg-accent);"></div><div class="token-name">--bg-accent</div><div class="token-desc">Accent bg</div></div>
+  <div class="token"><div class="token-block" style="background:var(--border-default);"></div><div class="token-name">--border-default</div><div class="token-desc">Default border</div></div>
+  <div class="token"><div class="token-block" style="background:var(--state-error);"></div><div class="token-name">--state-error</div><div class="token-desc">Error</div></div>
+  <div class="token"><div class="token-block" style="background:var(--state-success);"></div><div class="token-name">--state-success</div><div class="token-desc">Success</div></div>
+  <div class="token"><div class="token-block" style="background:var(--state-warning);"></div><div class="token-name">--state-warning</div><div class="token-desc">Warning</div></div>
+</div>
+</body></html>

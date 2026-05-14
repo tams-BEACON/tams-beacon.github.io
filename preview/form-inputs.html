@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--bg-primary); font-family: var(--font-serif); }
+  .section-title { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-subtle); margin-bottom: 10px; }
+  .col { display: flex; flex-direction: column; gap: 12px; max-width: 360px; }
+  .field-group { display: flex; flex-direction: column; gap: 4px; }
+  .field-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-secondary); }
+  .field-input {
+    font-family: var(--font-serif);
+    font-size: 15px;
+    color: var(--fg-primary);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-default);
+    padding: 9px 12px;
+    border-radius: 2px;
+    width: 100%;
+    outline: none;
+    transition: border-color 150ms cubic-bezier(0.25,0,0,1);
+  }
+  .field-input:focus { border-color: var(--color-black); }
+  .field-input.error { border-color: var(--state-error); }
+  .field-input::placeholder { color: var(--fg-subtle); }
+  .field-error { font-size: 11px; color: var(--state-error); }
+  .field-hint { font-size: 11px; color: var(--fg-muted); }
+  select.field-input { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239A9A9A'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; }
+</style>
+</head><body>
+  <div class="section-title">Form Inputs</div>
+  <div class="col">
+    <div class="field-group">
+      <label class="field-label">Full Name</label>
+      <input class="field-input" type="text" placeholder="Jane Smith" />
+    </div>
+    <div class="field-group">
+      <label class="field-label">Email</label>
+      <input class="field-input error" type="email" value="jane@" />
+      <span class="field-error">Please enter a valid email address.</span>
+    </div>
+    <div class="field-group">
+      <label class="field-label">Year</label>
+      <select class="field-input">
+        <option>Freshman</option>
+        <option>Sophomore</option>
+        <option selected>Junior</option>
+        <option>Senior</option>
+      </select>
+    </div>
+    <div class="field-group">
+      <label class="field-label">Why BEACON?</label>
+      <textarea class="field-input" rows="3" placeholder="Tell us what you're hoping to get out of BEACON..."></textarea>
+      <span class="field-hint">Keep it brief — 2–3 sentences is ideal.</span>
+    </div>
+  </div>
+</body></html>

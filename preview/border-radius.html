@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--bg-primary); font-family: var(--font-serif); }
+  .row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .box { width: 64px; height: 40px; background: var(--color-black); }
+  .label { font-size: 10px; font-family: var(--font-mono); color: var(--fg-muted); }
+  .sub { font-size: 10px; color: var(--fg-subtle); }
+</style>
+</head><body>
+  <div class="row">
+    <div class="item">
+      <div class="box" style="border-radius:0px;"></div>
+      <div class="label">--radius-0</div>
+      <div class="sub">0px · default</div>
+    </div>
+    <div class="item">
+      <div class="box" style="border-radius:2px;"></div>
+      <div class="label">--radius-sm</div>
+      <div class="sub">2px · tags</div>
+    </div>
+    <div class="item">
+      <div class="box" style="border-radius:4px;"></div>
+      <div class="label">--radius-md</div>
+      <div class="sub">4px · soft cards</div>
+    </div>
+    <div class="item">
+      <div class="box" style="border-radius:999px;"></div>
+      <div class="label">--radius-full</div>
+      <div class="sub">999px · pill</div>
+    </div>
+  </div>
+</body></html>

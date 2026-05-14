@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--bg-primary); font-family: var(--font-serif); }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .section-title { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-subtle); margin-bottom: 8px; }
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-family: var(--font-serif);
+  }
+  .badge-default { background: var(--color-gray-100); color: var(--fg-secondary); border: 1px solid var(--border-default); }
+  .badge-black { background: var(--color-black); color: var(--color-white); }
+  .badge-orange { background: var(--color-orange); color: var(--color-white); }
+  .badge-amber { background: var(--color-amber); color: var(--color-white); }
+  .badge-cream { background: var(--color-cream); color: var(--fg-secondary); border: 1px solid var(--color-cream-dark); }
+  .badge-outline { background: transparent; color: var(--color-black); border: 1px solid var(--color-black); }
+  .badge-orange-outline { background: transparent; color: var(--color-orange); border: 1px solid var(--color-orange); }
+  .badge-success { background: #EAF4EE; color: var(--state-success); border: 1px solid #B6DFC3; }
+  .badge-error { background: #FCEAEA; color: var(--state-error); border: 1px solid #F5C0BE; }
+</style>
+</head><body>
+  <div class="section-title">Filled</div>
+  <div class="row">
+    <span class="badge badge-black">BEACON</span>
+    <span class="badge badge-orange">New</span>
+    <span class="badge badge-amber">Upcoming</span>
+    <span class="badge badge-cream">Workshop</span>
+    <span class="badge badge-default">Networking</span>
+  </div>
+  <div class="section-title">Outlined</div>
+  <div class="row">
+    <span class="badge badge-outline">Internship</span>
+    <span class="badge badge-orange-outline">Open</span>
+    <span class="badge badge-success">Confirmed</span>
+    <span class="badge badge-error">Closed</span>
+  </div>
+</body></html>

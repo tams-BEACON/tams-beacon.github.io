@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--bg-primary); font-family: var(--font-serif); }
+  .row { display: flex; gap: 32px; align-items: flex-start; flex-wrap: wrap; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .bg-white { background: #fff; border: 1px solid var(--border-default); padding: 16px; }
+  .bg-cream { background: var(--color-cream); padding: 16px; }
+  .bg-black { background: var(--color-black); padding: 16px; }
+  .label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-muted); }
+  .note { font-size: 10px; color: var(--fg-subtle); text-align: center; max-width: 120px; }
+</style>
+</head><body>
+  <div class="row">
+    <div class="item">
+      <div class="bg-white"><img src="../assets/shiba_inu.png" width="120" alt="BEACON logo on white"></div>
+      <div class="label">On White</div>
+      <div class="note">Primary usage — white background</div>
+    </div>
+    <div class="item">
+      <div class="bg-cream"><img src="../assets/shiba_inu.png" width="120" alt="BEACON logo on cream"></div>
+      <div class="label">On Cream</div>
+      <div class="note">Secondary bg variant</div>
+    </div>
+    <div class="item">
+      <div class="bg-black"><img src="../assets/shiba_inu.png" width="120" alt="BEACON logo on black"></div>
+      <div class="label">On Black</div>
+      <div class="note">Dark bg — logo reads well</div>
+    </div>
+    <div class="item">
+      <div class="bg-white"><img src="../assets/shiba_inu.png" width="60" alt="small"></div>
+      <div class="label">Minimum Size</div>
+      <div class="note">≥ 60px tall for pixel art clarity</div>
+    </div>
+    <div class="item">
+      <div class="bg-white"><img src="../assets/shiba_inu.png" width="200" alt="large"></div>
+      <div class="label">Hero / Large</div>
+      <div class="note">Feature contexts</div>
+    </div>
+  </div>
+</body></html>
