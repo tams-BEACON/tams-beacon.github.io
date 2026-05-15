@@ -167,7 +167,7 @@ function HomePage({ setPage }) {
       {/* Hero */}
       <section style={homeStyles.hero}>
         <div style={homeStyles.heroLeft}>
-          <div style={{...homeStyles.heroEyebrow, ...mountFade(0)}}>Student Club · Career Development</div>
+          <div style={{...homeStyles.heroEyebrow, ...mountFade(0)}}>TAMS Club · Career Development</div>
           <h1 style={{...homeStyles.heroHeading, ...mountFade(1)}}>
             We open<br />
             <span style={homeStyles.heroAccent}>the door.</span>
