@@ -174,7 +174,7 @@ function HomePage({ setPage }) {
           </h1>
           <p style={{...homeStyles.heroSub, ...mountFade(2)}}>
             BEACON connects TAMS students with any alumni for internships, presentations, and real advice for life after TAMS.
-            You name it, we got it. 
+            <br>You name it, we got it.</br>
           </p>
           <div style={{...homeStyles.heroCtas, ...mountFade(3)}}>
             <button
