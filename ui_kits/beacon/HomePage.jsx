@@ -169,11 +169,12 @@ function HomePage({ setPage }) {
         <div style={homeStyles.heroLeft}>
           <div style={{...homeStyles.heroEyebrow, ...mountFade(0)}}>Student Club · Career Development</div>
           <h1 style={{...homeStyles.heroHeading, ...mountFade(1)}}>
-            We get you<br />
-            <span style={homeStyles.heroAccent}>in the room.</span>
+            We open<br />
+            <span style={homeStyles.heroAccent}>the door.</span>
           </h1>
           <p style={{...homeStyles.heroSub, ...mountFade(2)}}>
-            BEACON connects ambitious students with industry professionals for real experiences, internships, and career-defining conversations.
+            BEACON connects TAMS students with any alumni for internships, presentations, and real advice for life after TAMS.
+            You name it, we got it. 
           </p>
           <div style={{...homeStyles.heroCtas, ...mountFade(3)}}>
             <button
