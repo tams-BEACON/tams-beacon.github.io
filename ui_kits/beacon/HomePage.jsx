@@ -173,9 +173,9 @@ function HomePage({ setPage }) {
             <span style={homeStyles.heroAccent}>the door.</span>
           </h1>
           <p style={{...homeStyles.heroSub, ...mountFade(2)}}>
-            BEACON connects TAMS students with any alumni for internships, presentations, and real advice for life after TAMS.
-            <br></br>
             Name a job. We've got an alum there.
+            <br></br>
+            BEACON connects TAMS students with any alumni for internships, presentations, and real advice for life after TAMS.
           </p>
           <div style={{...homeStyles.heroCtas, ...mountFade(3)}}>
             <button
