@@ -121,8 +121,8 @@ function TeamPage({ setPage }) {
           <p style={{...teamStyles.subtitle, ...mountFade(2)}}>Students who believe that the right conversation can change your career trajectory.</p>
         </div>
         <div style={{...{ textAlign: 'right' }, ...mountFade(3)}}>
-          <div style={teamStyles.heroCount}>16</div>
-          <div style={teamStyles.heroCountLabel}>Active Members</div>
+          {/* <div style={teamStyles.heroCount}>16</div>
+          <div style={teamStyles.heroCountLabel}>Active Members</div> */}
         </div>
       </div>
 
