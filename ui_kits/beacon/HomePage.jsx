@@ -142,9 +142,9 @@ const homeStyles = {
 };
 
 const events = [
-  { date: 'June 12, 2026', title: 'Spring Networking Night', desc: 'Connect with professionals from finance, consulting, and tech over curated conversations.', tag: 'Networking', tagColor: '#0A0A0A', tagBg: '#F5F5F5' },
-  { date: 'June 20, 2026', title: 'Alumni Panel: Breaking In', desc: 'Four BEACON alumni share how they landed their first roles at top companies.', tag: 'Panel', tagColor: '#FFFFFF', tagBg: '#E8891A' },
-  { date: 'July 8, 2026', title: 'Resume & Interview Workshop', desc: 'One-on-one feedback sessions with hiring managers currently recruiting.', tag: 'Workshop', tagColor: '#FFFFFF', tagBg: '#0A0A0A' },
+  // { date: 'June 12, 2026', title: 'Spring Networking Night', desc: 'Connect with professionals from finance, consulting, and tech over curated conversations.', tag: 'Networking', tagColor: '#0A0A0A', tagBg: '#F5F5F5' },
+  // { date: 'June 20, 2026', title: 'Alumni Panel: Breaking In', desc: 'Four BEACON alumni share how they landed their first roles at top companies.', tag: 'Panel', tagColor: '#FFFFFF', tagBg: '#E8891A' },
+  // { date: 'July 8, 2026', title: 'Resume & Interview Workshop', desc: 'One-on-one feedback sessions with hiring managers currently recruiting.', tag: 'Workshop', tagColor: '#FFFFFF', tagBg: '#0A0A0A' },
 ];
 
 function HomePage({ setPage }) {
@@ -182,7 +182,7 @@ function HomePage({ setPage }) {
               style={{ ...homeStyles.btnPrimary, background: hoverApply ? '#E8891A' : '#0A0A0A' }}
               onMouseEnter={() => setHoverApply(true)}
               onMouseLeave={() => setHoverApply(false)}
-              onClick={() => setPage('Apply')}>
+              onClick={() => window.open('https://forms.gle/CnEVqQpFcweBwNgJ9', '_blank')}>
               Apply Now
             </button>
             <button style={homeStyles.btnSecondary} onClick={() => setPage('Events')}>
@@ -215,9 +215,8 @@ function HomePage({ setPage }) {
         </div>
         <div style={homeStyles.pillarsGrid}>
           {[
-            { n: '01', title: 'Industry Access', desc: 'We bring in professionals from finance, consulting, tech, and more — people who are actively hiring and willing to share their paths.' },
-            { n: '02', title: 'Hands-On Experience', desc: 'Workshops, case competitions, and projects that build the skills recruiters actually look for, not just academic credentials.' },
-            { n: '03', title: 'A Lasting Network', desc: 'Join a community of students and alumni who look out for each other — long after graduation.' },
+            { n: '01', title: 'Industry Access', desc: 'We bring in professionals from business, tech, medical, and more — alum who are willing to share their stories.' },
+            { n: '02', title: 'Hands-On Experience', desc: 'Workshops and projects that build skills professionals and professors are actually looking for, not just academic credentials.' },
           ].map((p, pi) => (
             <FadeIn key={p.n} delay={pi * 110}>
               <div style={homeStyles.pillar}>
@@ -268,7 +267,7 @@ function HomePage({ setPage }) {
           <div style={homeStyles.ctaText}>Your career starts with a conversation.</div>
           <button
             style={{ ...homeStyles.btnPrimary, fontSize: '13px', padding: '14px 32px', background: '#E8891A' }}
-            onClick={() => setPage('Apply')}>
+            onClick={() => window.open('https://forms.gle/CnEVqQpFcweBwNgJ9', '_blank')}>
             Apply to BEACON →
           </button>
         </div>

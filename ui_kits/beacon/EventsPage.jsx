@@ -142,7 +142,7 @@ function EventsPage() {
       </div>
 
       <div style={eventsStyles.section}>
-        <div style={eventsStyles.sectionLabel}>Upcoming — {filtered.length} event{filtered.length !== 1 ? 's' : ''}</div>
+        {/* <div style={eventsStyles.sectionLabel}>Upcoming — {filtered.length} event{filtered.length !== 1 ? 's' : ''}</div>
         <div style={eventsStyles.grid}>
           {filtered.map((ev, i) => (
             <FadeIn key={i} delay={i * 70}>
@@ -160,7 +160,7 @@ function EventsPage() {
               </div>
             </FadeIn>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div style={eventsStyles.pastSection}>

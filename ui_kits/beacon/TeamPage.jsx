@@ -86,26 +86,27 @@ const teamStyles = {
 };
 
 const execTeam = [
-  { initials: 'AK', name: 'Aisha Kim', role: 'President', major: 'Finance, Junior', color: '#E8891A' },
-  { initials: 'MT', name: 'Marcus Torres', role: 'VP Events', major: 'Business Admin, Senior', color: '#0A0A0A' },
-  { initials: 'PL', name: 'Priya Lin', role: 'VP Outreach', major: 'Economics, Junior', color: '#D4A642' },
-  { initials: 'JR', name: 'James Reed', role: 'VP Marketing', major: 'Communications, Sophomore', color: '#5A5A5A' },
+  { initials: 'AS', name: 'Ansh Shah', role: 'President', major: 'Engineering', color: '#E8891A' },
+  { initials: 'AK', name: 'Ayush Kota', role: 'Engineering Head', major: 'Engineering', color: '#0A0A0A' },
+  { initials: 'DB', name: 'Dhanush Boyineni', role: 'Medical Head', major: 'General Science', color: '#0A0A0A' },
+  { initials: 'DJ', name: 'Dylan Joseph', role: 'CS Head', major: 'Computer Science to CS', color: '#D4A642' },
+  { initials: 'AA', name: 'Aryan Aggarwal', role: 'Business Head', major: 'Computer Science to IT', color: '#5A5A5A' },
 ];
 
-const members = [
-  { initials: 'SN', name: 'Sophie N.', major: 'Finance' },
-  { initials: 'CW', name: 'Carlos W.', major: 'CS' },
-  { initials: 'YP', name: 'Yuna P.', major: 'Econ' },
-  { initials: 'BM', name: 'Ben M.', major: 'Marketing' },
-  { initials: 'IR', name: 'Ines R.', major: 'Acctg.' },
-  { initials: 'TK', name: 'Tyler K.', major: 'Finance' },
-  { initials: 'AZ', name: 'Amara Z.', major: 'Stats' },
-  { initials: 'LG', name: 'Luca G.', major: 'Bus. Admin' },
-  { initials: 'NC', name: 'Nia C.', major: 'Econ' },
-  { initials: 'RH', name: 'Ryan H.', major: 'CS' },
-  { initials: 'MF', name: 'Maya F.', major: 'Marketing' },
-  { initials: 'DO', name: 'David O.', major: 'Finance' },
-];
+// const members = [
+//   { initials: 'SN', name: 'Sophie N.', major: 'Finance' },
+//   { initials: 'CW', name: 'Carlos W.', major: 'CS' },
+//   { initials: 'YP', name: 'Yuna P.', major: 'Econ' },
+//   { initials: 'BM', name: 'Ben M.', major: 'Marketing' },
+//   { initials: 'IR', name: 'Ines R.', major: 'Acctg.' },
+//   { initials: 'TK', name: 'Tyler K.', major: 'Finance' },
+//   { initials: 'AZ', name: 'Amara Z.', major: 'Stats' },
+//   { initials: 'LG', name: 'Luca G.', major: 'Bus. Admin' },
+//   { initials: 'NC', name: 'Nia C.', major: 'Econ' },
+//   { initials: 'RH', name: 'Ryan H.', major: 'CS' },
+//   { initials: 'MF', name: 'Maya F.', major: 'Marketing' },
+//   { initials: 'DO', name: 'David O.', major: 'Finance' },
+// ];
 
 function TeamPage({ setPage }) {
   const [hoverApply, setHoverApply] = React.useState(false);
@@ -146,7 +147,7 @@ function TeamPage({ setPage }) {
         </div>
       </div>
 
-      {/* General members */}
+      {/* General members
       <div style={teamStyles.sectionCream}>
         <div style={teamStyles.sectionLabel}>General Members</div>
         <div style={teamStyles.membersGrid}>
@@ -164,7 +165,7 @@ function TeamPage({ setPage }) {
             </FadeIn>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* CTA */}
       <div style={{ padding: '64px 48px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid #E4E4E4' }}>
@@ -176,7 +177,7 @@ function TeamPage({ setPage }) {
           style={{ fontFamily: '"Times New Roman",serif', fontSize: '12px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', background: hoverApply ? '#E8891A' : '#0A0A0A', color: '#FFFFFF', border: 'none', padding: '13px 28px', borderRadius: '2px', cursor: 'pointer' }}
           onMouseEnter={() => setHoverApply(true)}
           onMouseLeave={() => setHoverApply(false)}
-          onClick={() => setPage('Apply')}>
+          onClick={() => window.open('https://forms.gle/CnEVqQpFcweBwNgJ9', '_blank')}>
           Apply Now
         </button>
       </div>

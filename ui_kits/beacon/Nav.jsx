@@ -63,7 +63,7 @@ function Nav({ page, setPage }) {
       </div>
       <button style={{ ...navStyles.cta, background: hoverCta ? '#E8891A' : '#0A0A0A' }}
         onMouseEnter={() => setHoverCta(true)} onMouseLeave={() => setHoverCta(false)}
-        onClick={() => setPage('Apply')}>
+        onClick={() => window.open('https://forms.gle/CnEVqQpFcweBwNgJ9', '_blank')}>
         Apply Now
       </button>
     </nav>
