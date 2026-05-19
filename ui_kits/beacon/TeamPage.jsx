@@ -87,10 +87,10 @@ const teamStyles = {
 
 const execTeam = [
   { initials: 'AS', name: 'Ansh Shah', role: 'President', major: 'Engineering', color: '#E8891A' },
-  { initials: 'AK', name: 'Ayush Kota', role: 'Engineering Head', major: 'Engineering', color: '#0A0A0A' },
+  { initials: 'AK', name: 'Ayush Kota', role: 'Engineering Head', major: 'Engineering', color: '#0A0A0A', image: '../../assets/headshots/ak.jpg' },
   { initials: 'DB', name: 'Dhanush Boyineni', role: 'Medical Head', major: 'General Science', color: '#0A0A0A' },
-  { initials: 'DJ', name: 'Dylan Joseph', role: 'CS Head', major: 'Computer Science to CS', color: '#D4A642' },
-  { initials: 'AA', name: 'Aryan Aggarwal', role: 'Business Head', major: 'Computer Science to IT', color: '#5A5A5A' },
+  { initials: 'DJ', name: 'Dylan Joseph', role: 'CS Head', major: 'Computer Science to CS', color: '#D4A642', image: '../../assets/headshots/dj.JPG' },
+  { initials: 'AA', name: 'Aryan Aggarwal', role: 'Business Head', major: 'Computer Science to IT', color: '#5A5A5A', image: '../../assets/headshots/aa.jpeg' },
 ];
 
 // const members = [
@@ -134,9 +134,13 @@ function TeamPage({ setPage }) {
             <FadeIn key={i} delay={i * 90}>
               <div style={teamStyles.memberCard}>
                 <div style={teamStyles.memberAvatar}>
-                  <div style={teamStyles.memberAvatarInner}>
-                    <div style={{ ...teamStyles.memberInitials, color: m.color }}>{m.initials}</div>
-                  </div>
+                  {m.image ? (
+                    <img src={m.image} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: m.initials === 'AK' ? 'center top' : 'center', position: 'absolute', inset: 0 }} />
+                  ) : (
+                    <div style={teamStyles.memberAvatarInner}>
+                      <div style={{ ...teamStyles.memberInitials, color: m.color }}>{m.initials}</div>
+                    </div>
+                  )}
                 </div>
                 <div style={teamStyles.memberName}>{m.name}</div>
                 <div style={teamStyles.memberRole}>{m.role}</div>
