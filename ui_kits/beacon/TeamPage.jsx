@@ -89,8 +89,8 @@ const execTeam = [
   { initials: 'AS', name: 'Ansh Shah', role: 'President', major: 'Engineering', color: '#E8891A' },
   { initials: 'AK', name: 'Ayush Kota', role: 'Engineering Head', major: 'Engineering', color: '#0A0A0A', image: '../../assets/headshots/ak.jpg' },
   { initials: 'DB', name: 'Dhanush Boyineni', role: 'Medical Head', major: 'General Science', color: '#0A0A0A' },
-  { initials: 'DJ', name: 'Dylan Joseph', role: 'CS Head', major: 'Computer Science to CS', color: '#D4A642', image: '../../assets/headshots/dj.JPG' },
-  { initials: 'AA', name: 'Aryan Aggarwal', role: 'Business Head', major: 'Computer Science to IT', color: '#5A5A5A', image: '../../assets/headshots/aa.jpeg' },
+  { initials: 'DJ', name: 'Dylan Joseph', role: 'CS Head', major: 'Computer Science to Computer Science', color: '#D4A642', image: '../../assets/headshots/dj.JPG' },
+  { initials: 'AA', name: 'Aryan Aggarwal', role: 'Business Head', major: 'Computer Science to Information Technology', color: '#5A5A5A', image: '../../assets/headshots/aa.jpeg' },
 ];
 
 // const members = [
