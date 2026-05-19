@@ -50,7 +50,7 @@ function Nav({ page, setPage }) {
   return (
     <nav style={{ ...navStyles.nav, ...(scrolled ? navStyles.navScrolled : {}) }}>
       <div style={navStyles.logo} onClick={() => setPage('Home')}>
-        <img src="../../assets/shiba_inu.png" style={navStyles.logoImg} alt="BEACON" />
+        <img src="../../assets/shiba_transparent.png" style={navStyles.logoImg} alt="BEACON" />
         B.E.A.C.O.N.
       </div>
       <div style={navStyles.links}>
