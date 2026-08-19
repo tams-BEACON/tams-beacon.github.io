@@ -99,12 +99,7 @@ const eventsStyles = {
 };
 
 const allEvents = [
-  { date: 'June 12, 2026', title: 'Spring Networking Night', desc: 'Curated conversations with professionals from finance, consulting, and technology.', tag: 'Networking', tagBg: '#F5F5F5', tagColor: '#0A0A0A', location: 'SOM Hall, Room 210', type: 'upcoming' },
-  { date: 'June 20, 2026', title: 'Alumni Panel: Breaking In', desc: 'Four BEACON alumni share how they landed their first roles at top firms.', tag: 'Panel', tagBg: '#E8891A', tagColor: '#FFFFFF', location: 'Zoom (hybrid)', type: 'upcoming' },
-  { date: 'July 8, 2026', title: 'Resume & Interview Workshop', desc: 'One-on-one feedback sessions with hiring managers currently recruiting.', tag: 'Workshop', tagBg: '#0A0A0A', tagColor: '#FFFFFF', location: 'Career Center, Rm 4', type: 'upcoming' },
-  { date: 'Aug 2, 2026', title: 'Summer Intern Cohort Mixer', desc: 'Connect with fellow BEACON members interning across the country this summer.', tag: 'Networking', tagBg: '#F5F5F5', tagColor: '#0A0A0A', location: 'Online', type: 'upcoming' },
-  { date: 'Sep 5, 2026', title: 'Fall Kickoff & Info Session', desc: "Learn about BEACON's Fall 2026 cohort and meet current members.", tag: 'Info Session', tagBg: '#D4A642', tagColor: '#FFFFFF', location: 'Westland Hall, Auditorium', type: 'upcoming' },
-  { date: 'Sep 19, 2026', title: 'Industry Deep Dive: Finance', desc: 'A focused evening with professionals from investment banking and asset management.', tag: 'Panel', tagBg: '#E8891A', tagColor: '#FFFFFF', location: 'Bloomberg Lab', type: 'upcoming' },
+  { date: 'August 29, 2026 · 10–11 PM', title: 'Seminar with Shoaib Makani', desc: 'Join Shoaib Makani for a seminar on running a $2.85 billion company.', tag: 'Seminar', tagBg: '#0A0A0A', tagColor: '#FFFFFF', type: 'upcoming' },
 ];
 
 const pastEvents = [
@@ -118,7 +113,7 @@ const pastEvents = [
 function EventsPage() {
   const [activeFilter, setActiveFilter] = React.useState('All');
   const [hoveredCard, setHoveredCard] = React.useState(null);
-  const filters = ['All', 'Networking', 'Panel', 'Workshop'];
+  const filters = ['All', 'Seminar'];
   const mountFade = useMountFade();
 
   const filtered = activeFilter === 'All' ? allEvents : allEvents.filter(e => e.tag === activeFilter);
@@ -142,7 +137,7 @@ function EventsPage() {
       </div>
 
       <div style={eventsStyles.section}>
-        {/* <div style={eventsStyles.sectionLabel}>Upcoming — {filtered.length} event{filtered.length !== 1 ? 's' : ''}</div>
+        <div style={eventsStyles.sectionLabel}>Upcoming — {filtered.length} event{filtered.length !== 1 ? 's' : ''}</div>
         <div style={eventsStyles.grid}>
           {filtered.map((ev, i) => (
             <FadeIn key={i} delay={i * 70}>
@@ -155,12 +150,12 @@ function EventsPage() {
                 <div style={eventsStyles.cardDesc}>{ev.desc}</div>
                 <div style={eventsStyles.cardMeta}>
                   <span style={{ ...eventsStyles.tag, background: ev.tagBg, color: ev.tagColor }}>{ev.tag}</span>
-                  <span style={eventsStyles.cardLocation}>📍 {ev.location}</span>
+                  {ev.location && <span style={eventsStyles.cardLocation}>📍 {ev.location}</span>}
                 </div>
               </div>
             </FadeIn>
           ))}
-        </div> */}
+        </div>
       </div>
 
       <div style={eventsStyles.pastSection}>
