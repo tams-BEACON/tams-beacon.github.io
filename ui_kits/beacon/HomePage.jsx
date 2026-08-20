@@ -142,7 +142,7 @@ const homeStyles = {
 };
 
 const events = [
-  { date: 'August 29, 2026 · 10–11 PM', title: 'Seminar with Shoaib Makani', desc: 'Join Shoaib Makani for a seminar on running a $2.85 billion company.', tag: 'Seminar', tagColor: '#FFFFFF', tagBg: '#0A0A0A' },
+  { date: 'August 29, 2026 · 10–11 PM', title: 'Seminar with Shoaib Makani', desc: 'Join Shoaib Makani for a seminar on running a $2.85 billion company.', tag: 'Seminar', tagColor: '#FFFFFF', tagBg: '#0A0A0A', href: 'https://tams-beacon.github.io/ui_kits/beacon/index.html' },
 ];
 
 function HomePage({ setPage }) {
@@ -245,15 +245,16 @@ function HomePage({ setPage }) {
         <div style={homeStyles.eventGrid}>
           {events.map((ev, i) => (
             <FadeIn key={i} delay={i * 80}>
-              <div
-                style={{ ...homeStyles.eventCard, boxShadow: hoveredCard === i ? '0 4px 16px rgba(10,10,10,0.10)' : 'none' }}
+              <a
+                href={ev.href}
+                style={{ ...homeStyles.eventCard, display: 'block', color: 'inherit', textDecoration: 'none', boxShadow: hoveredCard === i ? '0 4px 16px rgba(10,10,10,0.10)' : 'none' }}
                 onMouseEnter={() => setHoveredCard(i)}
                 onMouseLeave={() => setHoveredCard(null)}>
                 <div style={homeStyles.eventDate}>{ev.date}</div>
                 <div style={{ ...homeStyles.eventTitle, transition: 'color 200ms cubic-bezier(0.25,0,0,1)', color: hoveredCard === i ? '#E8891A' : '#0A0A0A' }}>{ev.title}</div>
                 <div style={homeStyles.eventDesc}>{ev.desc}</div>
                 <span style={{ ...homeStyles.eventTag, background: ev.tagBg, color: ev.tagColor }}>{ev.tag}</span>
-              </div>
+              </a>
             </FadeIn>
           ))}
         </div>
