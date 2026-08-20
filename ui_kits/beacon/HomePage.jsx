@@ -142,9 +142,7 @@ const homeStyles = {
 };
 
 const events = [
-  // { date: 'June 12, 2026', title: 'Spring Networking Night', desc: 'Connect with professionals from finance, consulting, and tech over curated conversations.', tag: 'Networking', tagColor: '#0A0A0A', tagBg: '#F5F5F5' },
-  // { date: 'June 20, 2026', title: 'Alumni Panel: Breaking In', desc: 'Four BEACON alumni share how they landed their first roles at top companies.', tag: 'Panel', tagColor: '#FFFFFF', tagBg: '#E8891A' },
-  // { date: 'July 8, 2026', title: 'Resume & Interview Workshop', desc: 'One-on-one feedback sessions with hiring managers currently recruiting.', tag: 'Workshop', tagColor: '#FFFFFF', tagBg: '#0A0A0A' },
+  { date: 'August 29, 2026 · 10–11 PM', title: 'Seminar with Shoaib Makani', desc: 'Join Shoaib Makani for a seminar on running a $2.85 billion company.', tag: 'Seminar', tagColor: '#FFFFFF', tagBg: '#0A0A0A' },
 ];
 
 function HomePage({ setPage }) {
