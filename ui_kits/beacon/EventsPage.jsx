@@ -99,7 +99,7 @@ const eventsStyles = {
 };
 
 const allEvents = [
-  { date: 'August 29, 2026 · 10–11 PM', title: 'Seminar with Shoaib Makani', desc: 'Join Shoaib Makani for a seminar on running a $2.85 billion company.', tag: 'Seminar', tagBg: '#0A0A0A', tagColor: '#FFFFFF', type: 'upcoming' },
+  { date: 'August 29, 2026 · 10–11 PM', title: 'Seminar with Shoaib Makani', desc: 'Join Shoaib Makani for a seminar on running a $2.85 billion company.', tag: 'Seminar', tagBg: '#0A0A0A', tagColor: '#FFFFFF', type: 'upcoming', href: 'https://tams-beacon.github.io/ui_kits/beacon/index.html' },
 ];
 
 const pastEvents = [
@@ -141,8 +141,9 @@ function EventsPage() {
         <div style={eventsStyles.grid}>
           {filtered.map((ev, i) => (
             <FadeIn key={i} delay={i * 70}>
-              <div
-                style={{ ...eventsStyles.card, ...(hoveredCard === i ? eventsStyles.cardHover : {}) }}
+              <a
+                href={ev.href}
+                style={{ ...eventsStyles.card, ...(hoveredCard === i ? eventsStyles.cardHover : {}), display: 'block', color: 'inherit', textDecoration: 'none' }}
                 onMouseEnter={() => setHoveredCard(i)}
                 onMouseLeave={() => setHoveredCard(null)}>
                 <div style={eventsStyles.cardDate}>{ev.date}</div>
@@ -152,7 +153,7 @@ function EventsPage() {
                   <span style={{ ...eventsStyles.tag, background: ev.tagBg, color: ev.tagColor }}>{ev.tag}</span>
                   {ev.location && <span style={eventsStyles.cardLocation}>📍 {ev.location}</span>}
                 </div>
-              </div>
+              </a>
             </FadeIn>
           ))}
         </div>
